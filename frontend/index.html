@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>🚀 Task Manager</h1>
+
+  <!-- AUTH -->
+  <div id="auth">
+    <h2>Login / Register</h2>
+    <input id="email" placeholder="Email">
+    <input id="username" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+
+    <div class="btn-group">
+      <button onclick="register()">Register</button>
+      <button onclick="login()">Login</button>
+    </div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dashboard" style="display:none;">
+    <h2>Dashboard</h2>
+
+    <div class="task-input">
+      <input id="title" placeholder="Task title">
+      <input id="desc" placeholder="Description">
+      <button onclick="createTask()">Add</button>
+    </div>
+
+    <button onclick="loadTasks()">Refresh Tasks</button>
+
+    <ul id="tasks"></ul>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
