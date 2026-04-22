@@ -111,9 +111,15 @@ app/db/session.py
 ```
 
 ```python
-DATABASE_URL = "postgresql://samrat:password@localhost/primetrade"
+DATABASE_URL = "your_database_url_here"
 ```
+### Environment Variables
 
+Create a `.env` file:
+```
+DATABASE_URL=your_database_url_here  
+SECRET_KEY=your_secret_key
+```
 ---
 
 ### 5. Run Server
@@ -217,6 +223,21 @@ app/
 ✔ PostgreSQL Integrated
 ✔ Authentication & RBAC Working
 ✔ Fully Tested
+
+---
+## 📸 Screenshots
+
+### 🔐 Login (JWT Authentication)
+![Login](screenshots/1_login-jwt.png)
+
+### 📊 Fetch Tasks (Authorized Access)
+![Get Tasks](screenshots/2-get-tasks.png)
+
+### ➕ Create Task
+![Create Task](screenshots/3-create-task.png)
+
+### ❌ Unauthorized Access (Security Check)
+![Unauthorized](screenshots/4-unauthorized.png)
 
 ---
 
